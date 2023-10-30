@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>in.project</groupId>
+  <artifactId>ProjecLab1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	  
+	  <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>javax.mail-api</artifactId>
+        <version>1.6.1</version> <!-- Use the appropriate version -->
+    </dependency>
+    
+    <dependency>
+	    <groupId>com.sun.mail</groupId>
+	    <artifactId>javax.mail</artifactId>
+	    <version>1.6.1</version>
+    </dependency>
+    
+    <dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-api</artifactId>
+	    <version>2.14.1</version> <!-- Use the latest version -->
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	    <version>2.14.1</version> <!-- Use the latest version -->
+	</dependency>
+	
+	
+    <!-- JUnit 5 dependencies -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.8.1</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.8.1</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
+    
+    <!-- Mockito for mocking objects -->
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>3.10.0</version> <!-- Use the appropriate version -->
+        <scope>test</scope>
+    </dependency>
+    
+     <!-- GreenMail for testing email sending -->
+    <dependency>
+        <groupId>com.icegreen</groupId>
+        <artifactId>greenmail</artifactId>
+        <version>1.6.1</version> <!-- Use the latest version -->
+        <scope>test</scope>
+    </dependency>
+
+
+    
+  </dependencies>
+  
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.0</version> <!-- Use the appropriate version -->
+            <configuration>
+                <source>8</source> <!-- Update to Java 8 -->
+                <target>8</target> <!-- Update to Java 8 -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+  
+</project>
